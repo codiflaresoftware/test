@@ -1,39 +1,57 @@
-# Tailcast
+# Sendit
 
-Dark themed website template built on AstroJS, designed for technological startup business.
+Sendit is a polished, marketing website template for Astro. Browse through a [live demo](https://top-quail.cloudvent.net/).
 
-## Tech stack:
+![Sendit template screenshot](public/images/_screenshot.png)
 
-Astro, React, Tailwind, Framer Motion
+[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/sendit-astro-template)
 
-## Live link
-[https://tailcast.vercel.app/](https://tailcast.vercel.app/)
+## Features
 
-##  Project Structure
+- Pre-built pages
+- Pre-styled components
+- Blog with pagination and category pages
+- Configurable navigation and footer
+- Multiple hero options
+- Configurable theme colors
+- Optimised for editing in [CloudCannon](https://cloudcannon.com/)
 
+## Setup
+
+1. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/)
+   or Astro locally).
+
+## Develop
+
+Sendit is built with [Astro](https://astro.build/).
+
+```bash
+$ npm install
+$ npm run dev
 ```
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── assets
-│   │   ├── icons
-│   │   ├── images
-│   │   └── logos
-│   ├── components
-│   ├── layouts
-│   ├──  pages
-│   └── styles
-└── package.json
-```
 
-##  How to run
+## Editing
 
-All commands are run from the root of the project, from a terminal:
+Sendit is set up for adding, updating and removing pages, components, posts, portfolio items, company details and footer elements in [CloudCannon](https://app.cloudcannon.com/).
 
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
+### Posts
 
+- Add, update or remove a post in the _Posts_ collection.
+- The **Staff Author** field links to members in the **Staff** collection.
+- Change the defaults when new posts are created in `content/posts/_defaults.md`.
+
+### Company details
+
+- Reused around the site to save multiple editing locations.
+- Set in the _Data_ / _Company_ section.
+
+### Nav/footer details
+
+- Reused around the site to save multiple editing locations.
+- Set in the _Data_ section with respective names
+
+### Theme colors
+
+- Theme colors can be set in _Data_ / _Theme_
+- The main colors are set and variants of them are computed
+- The colors will update on the next build
